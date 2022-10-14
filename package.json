@@ -1,0 +1,16 @@
+{
+  "name": "notes4u.cn",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "index.js",
+  "repository": "git@github.com:liyangIsDSG/notes4u.cn.git",
+  "author": "ly",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.51"
+  }
+}
