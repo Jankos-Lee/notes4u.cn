@@ -28,7 +28,7 @@ export default {
                     // SidebarItem
                     {
                         text: '1.函数式编程范式',
-                        // link: '/javascript/function.md',
+                        link: '/javascript/function.md',
                         children: [],
                     },
                     {
@@ -53,6 +53,67 @@ export default {
                     },
                 ],
             },
+            {
+                text: '前端工程化相关',
+                 // 可折叠的侧边栏
+                collapsible: true,
+                children:[
+                    {
+                        text: '1.脚手架工具',
+                        link: '/engineering/engineeringTools.md',
+                        children: [],
+                    }, 
+                    {
+                        text: '2.自动化构建',
+                        link: '/engineering/automateBuild.md',
+                        children: [],
+                    }, 
+                ]
+            },
+            {
+                text: 'Vue.js框架原理',
+                 // 可折叠的侧边栏
+                collapsible: true,
+                children:[
+                    {
+                        text: '1.Vue.js基础',
+                        link: '/vueframe/basicVue.md',
+                        children: [],
+                    }, 
+                    {
+                        text: '2.Vue源码浅析',
+                        link: '/vueframe/vueSourceCode.md',
+                        children: [],
+                    }, 
+                ]
+            },
+            {
+                text: 'React.js框架原理',
+                 // 可折叠的侧边栏
+                collapsible: true,
+                children:[
+                    {
+                        text: '1.React核心原理及核心源码',
+                        link: '/reactframe/reactCore.md',
+                        children: [],
+                    }, 
+                    {
+                        text: '2.React数据流方案',
+                        link: '/reactframe/reactDataFlow.md',
+                        children: [],
+                    }, 
+                    {
+                        text: '3.React Hooks以及组件性能优化',
+                        link: '/reactframe/reactHooks.md',
+                        children: [],
+                    }, 
+                    {
+                        text: '4.React服务端渲染',
+                        link: '/reactframe/reactServiceSideRender.md',
+                        children: [],
+                    }, 
+                ]
+            }
         ],
     }),
 };

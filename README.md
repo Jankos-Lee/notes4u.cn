@@ -1,2 +1,2 @@
 # notes4u.cn
-blog
+> vuepress快速建站，记录学习笔记，存放md文档
