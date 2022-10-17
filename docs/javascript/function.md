@@ -215,5 +215,5 @@ let power2 = makePower(2)
 let power3 = makePower(3)
 ```
 
-
+http://mirror.esuni.jp/jenkins/updates/update-center.json
 
