@@ -3,7 +3,7 @@ import { defaultTheme } from "@vuepress/theme-default";
 export default {
     lang: "zh-CN",
     title: "学习笔记",
-    dest:"/dist",
+    dest: 'dist',
     description: "这是我的第一个 VuePress 站点",
     theme: defaultTheme({
         // 在这里进行配置
