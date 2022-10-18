@@ -1,10 +1,12 @@
 import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
+import { searchPlugin } from '@vuepress/plugin-search'
 export default {
     lang: "zh-CN",
     title: "学习笔记",
-    dest: 'dist',
-    description: "这是我的第一个 VuePress 站点",
+    dest: "dist",
+    description: "前端笔记、JavaScript、Vue、React", //  HTML 中表现为一个 <meta> 标签
+    port: 3000, // dev 端口
     theme: defaultTheme({
         // 在这里进行配置
         navbar: [
@@ -22,99 +24,110 @@ export default {
         sidebar: [
             // SidebarItem
             {
-                text: 'JavaScript 深度剖析',
-                // 可折叠的侧边栏
-                collapsible: true,
+                text: "JavaScript 深度剖析",
+                collapsible: true, // 可折叠的侧边栏
                 children: [
                     // SidebarItem
                     {
-                        text: '1.函数式编程范式',
-                        link: '/javascript/function.md',
+                        text: "1.函数式编程范式",
+                        link: "/javascript/function.md",
                         children: [],
                     },
                     {
-                        text: '2.JavaScript 异步编程',
+                        text: "2.JavaScript 异步编程",
                         children: [],
                     },
                     {
-                        text: '3.Promise源码',
+                        text: "3.Promise源码",
                         children: [],
                     },
                     {
-                        text: '4.ECMAScript 新特性',
+                        text: "4.ECMAScript 新特性",
                         children: [],
                     },
                     {
-                        text: '5.TypeScript 语言 ',
+                        text: "5.TypeScript 语言 ",
                         children: [],
                     },
                     {
-                        text: '6.JavaScript 性能优化',
+                        text: "6.JavaScript 性能优化",
                         children: [],
                     },
                 ],
             },
             {
-                text: '前端工程化相关',
-                 // 可折叠的侧边栏
+                text: "前端工程化相关",
+                // 可折叠的侧边栏
                 collapsible: true,
-                children:[
+                children: [
                     {
-                        text: '1.脚手架工具',
-                        link: '/engineering/engineeringTools.md',
+                        text: "1.脚手架工具",
+                        link: "/engineering/engineeringTools.md",
                         children: [],
-                    }, 
+                    },
                     {
-                        text: '2.自动化构建',
-                        link: '/engineering/automateBuild.md',
+                        text: "2.自动化构建",
+                        link: "/engineering/automateBuild.md",
                         children: [],
-                    }, 
-                ]
+                    },
+                ],
             },
             {
-                text: 'Vue.js框架原理',
-                 // 可折叠的侧边栏
+                text: "Vue.js框架原理",
+                // 可折叠的侧边栏
                 collapsible: true,
-                children:[
+                children: [
                     {
-                        text: '1.Vue.js基础',
-                        link: '/vueframe/basicVue.md',
+                        text: "1.Vue.js基础",
+                        link: "/vueframe/basicVue.md",
                         children: [],
-                    }, 
+                    },
                     {
-                        text: '2.Vue源码浅析',
-                        link: '/vueframe/vueSourceCode.md',
+                        text: "2.Vue源码浅析",
+                        link: "/vueframe/vueSourceCode.md",
                         children: [],
-                    }, 
-                ]
+                    },
+                ],
             },
             {
-                text: 'React.js框架原理',
-                 // 可折叠的侧边栏
+                text: "React.js框架原理",
+                // 可折叠的侧边栏
                 collapsible: true,
-                children:[
+                children: [
                     {
-                        text: '1.React核心原理及核心源码',
-                        link: '/reactframe/reactCore.md',
+                        text: "1.React核心原理及核心源码",
+                        link: "/reactframe/reactCore.md",
                         children: [],
-                    }, 
+                    },
                     {
-                        text: '2.React数据流方案',
-                        link: '/reactframe/reactDataFlow.md',
+                        text: "2.React数据流方案",
+                        link: "/reactframe/reactDataFlow.md",
                         children: [],
-                    }, 
+                    },
                     {
-                        text: '3.React Hooks以及组件性能优化',
-                        link: '/reactframe/reactHooks.md',
+                        text: "3.React Hooks以及组件性能优化",
+                        link: "/reactframe/reactHooks.md",
                         children: [],
-                    }, 
+                    },
                     {
-                        text: '4.React服务端渲染',
-                        link: '/reactframe/reactServiceSideRender.md',
+                        text: "4.React服务端渲染",
+                        link: "/reactframe/reactServiceSideRender.md",
                         children: [],
-                    }, 
-                ]
-            }
+                    },
+                ],
+            },
         ],
     }),
+    plugins: [
+        searchPlugin({
+            locales: {
+                '/': {
+                    placeholder: '',
+                },
+                '/zh/': {
+                    placeholder: '搜索',
+                },
+            },
+        }),
+    ],
 };

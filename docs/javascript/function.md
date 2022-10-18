@@ -1,4 +1,4 @@
-# 函数式编程
+函数式编程
 
 ### 为什么要学习函数式编程
 
@@ -146,7 +146,7 @@ const BlogController = {
 
   
 
-### **使用高阶函数的意义**
+#### **使用高阶函数的意义**
 
 * 抽象可以帮我们屏蔽细节，只需要关注与我们的目标
 * 高阶函数是用来抽象通用的问题
@@ -163,7 +163,7 @@ let array = [1, 2, 3, 4]
 forEach(array, item => { console.log(item) })
 ```
 
-### **常用高阶函数**
+#### **常用高阶函数**
 
 * forEach 
 
@@ -215,5 +215,99 @@ let power2 = makePower(2)
 let power3 = makePower(3)
 ```
 
-http://mirror.esuni.jp/jenkins/updates/update-center.json
 
+
+### 纯函数
+
+#### **纯函数概念**
+
+* **纯函数：相同的输入永远会得到相同的输出**，而且没有任何可观察的副作用
+  * 纯函数就类似数学中的函数(用来描述输入和输出之间的关系)，y = f(x) 
+
+* lodash 是一个纯函数的功能库，提供了对数组、数字、对象、字符串、函数等操作的一些方法
+* 数组的 slice 和 splice 分别是：纯函数和不纯的函数
+  * slice 返回数组中的指定部分，不会改变原数组
+  * splice 对数组进行操作返回该数组，会改变原数组
+
+* 函数式编程不会保留计算中间的结果，所以变量是不可变的（无状态的）
+* 我们可以把一个函数的执行结果交给另一个函数去处理
+
+#### **纯函数的好处**
+
+* 可缓存
+  * 因为纯函数对相同的输入始终有相同的结果，所以可以把纯函数的结果缓存起来
+
+* 自己模拟一个 memoize 函数
+
+```javascript
+function memoize (f) {
+  let cache = {}
+  return function () {
+    let arg_str = JSON.stringify(arguments)
+    cache[arg_str] = cache[arg_str] || f.apply(f, arguments) 
+    return cache[arg_str] 
+  } 
+}
+```
+
+* 可测试
+  * 纯函数让测试更方便
+
+* 并行处理
+  * 在多线程环境下并行操作共享的内存数据很可能会出现意外情况
+  * 纯函数不需要访问共享的内存数据，所以在并行环境下可以任意运行纯函数 (Web Worker)
+
+### **副作用**
+
+* 纯函数：对于相同的输入永远会得到相同的输出，而且没有任何可观察的**副作用**
+
+```javascript
+// 不纯的
+let mini = 18
+function checkAge (age) {
+  return age >= mini 
+}
+// 纯的(有硬编码，后续可以通过柯里化解决)
+function checkAge (age) {
+  let mini = 18 
+  return age >= mini 
+}
+```
+
+副作用让一个函数变的不纯(如上例)，纯函数的根据相同的输入返回相同的输出，如果函数依赖于外部
+
+的状态就无法保证输出相同，就会带来副作用。
+
+### **柯里化** **(Haskell Brooks Curry)**
+
+* 使用柯里化解决上一个案例中硬编码的问题
+
+```javascript
+function checkAge (age) {
+  let min = 18
+  return age >= min
+}
+// 普通纯函数
+function checkAge (min, age) {
+  return age >= min 
+}
+checkAge(18, 24) 
+checkAge(18, 20) 
+checkAge(20, 30)
+// 柯里化
+function checkAge (min) {
+  return function (age) {
+    return age >= min 
+  } 
+}
+// ES6 写法 
+let checkAge = min => (age => age >= min) 
+let checkAge18 = checkAge(18) 
+let checkAge20 = checkAge(20) 
+checkAge18(24) 
+checkAge18(20)
+```
+
+* **柯里化** **(Currying)**
+  * 当一个函数有多个参数的时候先传递一部分参数调用它（这部分参数以后永远不变）
+  * 然后返回一个新的函数接收剩余的参数，返回结果
