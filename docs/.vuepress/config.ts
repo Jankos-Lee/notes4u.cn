@@ -35,6 +35,7 @@ export default {
                     },
                     {
                         text: "2.JavaScript 异步编程",
+                        link: "/javascript/async.md",
                         children: [],
                     },
                     {
@@ -47,6 +48,7 @@ export default {
                     },
                     {
                         text: "5.TypeScript 语言 ",
+                        link: "/javascript/typeScript.md",
                         children: [],
                     },
                     {
@@ -115,6 +117,19 @@ export default {
                         children: [],
                     },
                 ],
+            },
+            {
+                text: "前端面试题汇总",
+                // 可折叠的侧边栏
+                // collapsible: true,
+                link: "/interview/feInterview.md",
+                // children: [
+                //     {
+                //         text: "1.Vue.js基础",
+                //         link: "/interview/feInterview.md",
+                //         children: [],
+                //     },
+                // ],
             },
         ],
     }),
