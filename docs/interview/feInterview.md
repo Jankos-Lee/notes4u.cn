@@ -351,18 +351,8 @@
 
 ## 参考资料
 
-- [react 面试题整理](https://zhuanlan.zhihu.com/p/472168884)
-- [梳理React常考面试题](https://blog.51cto.com/u_10887428/5149081?b=totalstatistic)
-- [react如何做性能优化](https://zhuanlan.zhihu.com/p/450176612)
-- [2021年React常见的面试题以及答案](https://blog.csdn.net/qq_44182284/article/details/116979015)
-- [50个最新TypeScript面试题合集](https://blog.csdn.net/weixin_44727080/article/details/123108565)
-- [浏览器面试题](https://zhuanlan.zhihu.com/p/438384948)
-- [ES6常见面试题总结](https://blog.csdn.net/tampatation/article/details/123614989)
-- [你需要知道的ES6—ES13开发技巧](https://mp.weixin.qq.com/s/pBhdhuWRkEzVXyETXou7Kw)
-- [前端面试题之网络篇](https://blog.csdn.net/BIBIBIA/article/details/115975941)
-- [css面试题十五道](https://blog.csdn.net/qaq99625/article/details/124427881)
 - [js面试之道](http://caibaojian.com/interview-map/frontend/)
-
+- [前端学习PDF汇总](https://github.com/xianshenglu/document)
 
 
 > 感谢同事总结 meng lin 提供文档 -_-
