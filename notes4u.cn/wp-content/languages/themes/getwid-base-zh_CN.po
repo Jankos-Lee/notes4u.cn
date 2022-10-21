@@ -1,0 +1,751 @@
+# Translation of Themes - Getwid Base in Chinese (China)
+# This file is distributed under the same license as the Themes - Getwid Base package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-10-01 12:58:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Themes - Getwid Base\n"
+
+#. Description of the theme
+msgid "Getwid Base is a clean and lightweight Gutenberg theme designed to work seamlessly with the new block-based editor and Getwid plugin - a collection of custom blocks for Gutenberg. Use Getwid Theme to build a small or midsize business website, site for a creative or digital agency, startup launch or product landing page, as well as any other kind of business or portfolio website. Thanks to the powerful combination of core Gutenberg blocks and advanced block library enabled by Getwid plugin, you'll be free to build and customize content rich pages with no coding skills involved. Theme Demo: https://getwid.getmotopress.com"
+msgstr "新的基于区块的编辑器和Getwid插件——古腾堡的自定义区块的集合。使用Getwid主题可以建立一个小型或中型企业网站、一个用于创意或数字代理的网站、一个产品登录页面、以及任何其他类型的企业或投资组合网站。得益于Getwid插件启用的核心古腾堡区块和高级区块库的强大组合，您可以自由地构建和自定义内容丰富的页面，而无需任何编码技能。主题演示：https://getwid.getmotopress.com"
+
+#. Theme Name of the theme
+msgid "Getwid Base"
+msgstr "Getwid Base"
+
+#: header.php:108
+msgid "Open Search"
+msgstr "打开搜索"
+
+#: header.php:80
+msgid "Menu"
+msgstr "菜单"
+
+#: header.php:37
+msgid "Close Search"
+msgstr "关闭搜索"
+
+#: inc/customizer.php:49
+msgid "Hide Header Search?"
+msgstr "隐藏页眉搜索？"
+
+#: inc/customizer.php:37
+msgid "Header Options"
+msgstr "页眉选项"
+
+#: inc/template-functions.php:104 inc/template-functions.php:105
+msgid "More"
+msgstr "更多"
+
+#. translators: %1$s: color label in block editor.
+#: inc/customizer.php:240
+msgid "Block Editor - %1$s"
+msgstr "区块编辑器 - %1$s"
+
+#: inc/customizer.php:224
+msgid "Form fields border color on focus."
+msgstr "当聚焦时表单字段边框的颜色。"
+
+#: inc/customizer.php:223
+msgid "Form Fields Border Focus Color"
+msgstr "表单字段边框聚焦颜色"
+
+#: inc/customizer.php:211
+msgid "Form fields and some blocks border & lines color."
+msgstr "表单字段、一些区块边框和线条的颜色。"
+
+#: inc/customizer.php:210
+msgid "Form Fields, Blocks Border and Lines Color"
+msgstr "表单字段、区块边框和线条的颜色"
+
+#: inc/customizer.php:198
+msgid "Form fields and some blocks background color, e.g. recent posts, custom post type, posts carousel, testimonials."
+msgstr "表单字段和某些区块的背景颜色，例如最近的文章、自定义文章类型、文章转盘、推荐信。"
+
+#: inc/customizer.php:197
+msgid "Form Fields & Blocks Background"
+msgstr "表单字段和区块背景"
+
+#: inc/customizer.php:185
+msgid "Headings text color."
+msgstr "标题文本颜色。"
+
+#: inc/customizer.php:184
+msgid "Headings Color"
+msgstr "标题颜色"
+
+#: inc/customizer.php:172
+msgid "Main text color."
+msgstr "主要文本颜色。"
+
+#: inc/customizer.php:171
+msgid "Text Color"
+msgstr "文本颜色"
+
+#: inc/customizer.php:159
+msgid "Background color of search modal window, gradient on pages and posts."
+msgstr "搜索模式中窗口的背景颜色、页面和文章的渐变颜色。"
+
+#: inc/customizer.php:158
+msgid "Additional Color"
+msgstr "附加颜色"
+
+#: inc/customizer.php:146
+msgid "Secondary color like buttons hover etc."
+msgstr "次要颜色如按钮悬停等。"
+
+#: inc/customizer.php:145
+msgid "Secondary Color"
+msgstr "次要颜色"
+
+#: inc/customizer.php:133
+msgid "Primary color of buttons, links etc."
+msgstr "主要颜色如按钮、链接等。"
+
+#: inc/customizer.php:132
+msgid "Primary Color"
+msgstr "主要颜色"
+
+#: inc/customizer.php:120
+msgid "Background color for the header."
+msgstr "标题的背景颜色。"
+
+#: inc/customizer.php:119
+msgid "Header Background Color"
+msgstr "标题背景颜色"
+
+#: inc/customizer.php:107
+msgid "Color of the primary menu in header."
+msgstr "页眉中主要菜单的颜色。"
+
+#: inc/customizer.php:106
+msgid "Primary Menu Color"
+msgstr "主要菜单颜色"
+
+#: inc/customizer.php:85
+msgid "Layout will be adjusted automatically if some of sidebars have no widgets. Columns width in percentage. Slash means new row."
+msgstr "如果一些侧边栏没有小工具，布局将自动调整。以百分比表示的列宽。斜线表示新行。"
+
+#: inc/customizer.php:84
+msgid "Footer Widgets Layout"
+msgstr "页脚小工具的布局"
+
+#: functions.php:329
+msgid "Color 6"
+msgstr "颜色6"
+
+#: functions.php:324
+msgid "Color 5"
+msgstr "颜色5"
+
+#: functions.php:319
+msgid "Color 4"
+msgstr "颜色4"
+
+#: functions.php:314
+msgid "Color 3"
+msgstr "颜色3"
+
+#: functions.php:309
+msgid "Color 2"
+msgstr "颜色2"
+
+#: functions.php:304
+msgid "Color 1"
+msgstr "颜色1"
+
+#: inc/demo-import.php:12
+msgid "After you import this demo, you will have to configure the Contact Form and Google Maps API key separately."
+msgstr "导入此演示后，必须分别配置联系人表单和谷歌地图API 密钥。"
+
+#: inc/demo-import.php:11
+msgid "Data import is generally not immediate and can take up to 10 minutes."
+msgstr "数据导入通常不是立即的，最多需要10分钟。"
+
+#: inc/demo-import.php:10
+msgid "Important note before importing sample data."
+msgstr "导入样本数据前的重要注意事项。"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "搜索中"
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr "搜索"
+
+#: searchform.php:9
+msgctxt "label"
+msgid "Search for:"
+msgstr "搜索："
+
+#. Template Name of the theme
+msgid "Front Page"
+msgstr "首页"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "评论已关闭。"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "在&ldquo;%2$s&rdquo;有 %1$s 条评论"
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "在&ldquo;%1$s&rdquo;有 1 条评论"
+
+#. translators: %1$s: current year.
+#: inc/customizer.php:71
+msgid "Use %1$s to insert the current year. Does not work in the Live Preview."
+msgstr "使用%1$s插入当前年份。在实时预览中不起作用。"
+
+#: inc/customizer.php:69
+msgid "Footer Text"
+msgstr "页脚文本"
+
+#. translators: %1$s: current year.
+#: footer.php:31 inc/customizer.php:61
+msgctxt "Default footer text. %1$s - current year."
+msgid "Copyright &copy; %1$s.  All Rights Reserved."
+msgstr "版权 &copy; %1$s. 版权所有。"
+
+#: inc/customizer.php:56
+msgid "Footer Options"
+msgstr "页脚选项"
+
+#: inc/customizer.php:33
+msgid "Theme Options"
+msgstr "主题选项"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "正在安装插件%1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "所有安装均已完成。"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr "%1$s安装成功"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "正在启动安装过程。在某些主机上，此过程可能需要一段时间，因此请耐心等待。"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "正在安装和激活插件%1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "所有安装和激活均已完成。"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "隐藏详细信息"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "显示详细信息"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr "已成功安装并激活%1$s 。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "正在启动安装和激活过程。在某些主机上，此过程可能需要一段时间，因此请耐心等待。"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr "%1$s安装失败。"
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "安装%1$s时发生错误：<strong>%2$s</strong>。"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgmpa/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "正在更新插件%1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "插件激活失败。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "此时没有可激活的插件。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "没有选择要激活的插件。没有采取行动。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "目前没有可更新的插件。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "此时没有可安装的插件。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "没有选择要更新的插件。没有采取行动。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "没有选择要安装的插件。没有采取行动。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "激活"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "更新"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "安装"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "来自插件作者的升级消息："
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr "激活%2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr "更新%2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgmpa/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr "安装%2$s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "状态"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "版本"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "类型"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "来源"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "插件"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "没有要安装、更新或激活的插件。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "可用版本："
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "最低要求版本："
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "已安装版本："
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "未知"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "激活 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "可用更新<span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "安装<span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/tgmpa/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "全部 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: install status, 2: update status
+#: inc/tgmpa/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s，%2$s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "建议更新"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "需要更新"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "所需的更新不可用"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "激活"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "已安装但未激活"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "未安装"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "预先包装"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "外部来源"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "WordPress存储库"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "推荐"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "必须"
+
+#. translators: %s: version number
+#: inc/tgmpa/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1121
+#: inc/tgmpa/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "和"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "远程插件安装包中含有多个文件，这些文件不在一个文件夹中。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "请联系插件提供商，并要求他们根据WordPress指南打包其插件。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "远程插件包不包含带有所需别名的文件夹，并且重命名不起作用。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "必须更新"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "该插件需要更新，以便与您的主题相兼容。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "请与该站点的管理员联系以获取帮助。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr "有一个或多个必需或推荐的插件需要安装、更新或激活。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "关闭此通知"
+
+#. translators: 1: dashboard link.
+#: inc/tgmpa/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "所有插件均被成功安装并激活。%1$s"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "插件未激活。 此主题需要更高版本的%s。 请更新插件。"
+
+#. translators: 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "没有采取行动。插件%1$s已处于激活状态。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "以下插件已成功激活："
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:387
+#: inc/tgmpa/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "插件已成功激活。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:386
+#: inc/tgmpa/class-tgm-plugin-activation.php:827
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "返回仪表盘"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "返回所需插件的安装页面。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "开始激活插件"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "开始更新插件"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "开始安装插件"
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:364
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "以下推荐的插件当前处于未启用状态：%1$s。"
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:358
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "以下必需的插件当前处于未启用状态：%1$s。"
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "以下插件有可用的更新：%1$s。"
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:346
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] "以下插件需要更新到其最新版本，以确保与此主题的最大兼容性：%1$s。"
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "此主题建议使用以下插件：%1$s。"
+
+#. translators: 1: plugin name(s).
+#: inc/tgmpa/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "此主题需要以下插件：%1$s。"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr "插件API出了问题。"
+
+#. translators: %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr "正在更新插件：%s"
+
+#. translators: %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr "正在安装插件：%s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "安装插件"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "安装必需的插件"
+
+#: inc/template-tags.php:209
+msgid "Previous Post"
+msgstr "上一篇文章"
+
+#: inc/template-tags.php:201
+msgid "Next Post"
+msgstr "下一篇文章"
+
+#. translators: %s: post title
+#: inc/template-tags.php:77
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "在 <span class=\"screen-reader-text\">%s</span>上留下评论 "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:59
+msgid "in %1$s"
+msgstr "在%1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:56
+msgid ", "
+msgstr "、"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:39
+msgctxt "post author"
+msgid "by %s"
+msgstr "由%s发布"
+
+#. translators: %s: search query.
+#: search.php:22
+msgid "Search Results for: %s"
+msgstr "搜索结果：%s"
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "我们似乎找不到您要找的内容。也许搜索能帮上忙。"
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "抱歉，没有符合您搜索条件的内容。请使用其他关键字重试。"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备好发表您的第一篇文章了吗？<a href=\"%1$s\">从这里开始</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "没有找到任何内容"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-loop.php:47 template-parts/content.php:40
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "继续阅读<span class=\"screen-reader-text\">“%s”</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:102 template-parts/content-page.php:37
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "编辑<span class=\"screen-reader-text\">%s</span>"
+
+#: template-parts/content-loop.php:58 template-parts/content-page.php:24
+#: template-parts/content.php:51
+msgid "Pages:"
+msgstr "页面："
+
+#: header.php:49
+msgid "Skip to content"
+msgstr "跳转到内容"
+
+#: 404.php:28
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "看来在这个地方什么也没找到。也许可以试试下面的链接或搜索？"
+
+#: 404.php:20
+msgid "That page can&rsquo;t be found."
+msgstr "无法找到该页面"
+
+#: 404.php:19
+msgid "Oops!"
+msgstr "糟糕！"
+
+#: functions.php:278
+msgctxt "PT Serif font: on or off"
+msgid "on"
+msgstr "打开"
+
+#: functions.php:269
+msgctxt "Work Sans font: on or off"
+msgid "on"
+msgstr "打开"
+
+#: functions.php:167
+msgid "Footer 4"
+msgstr "页脚4"
+
+#: functions.php:157
+msgid "Footer 3"
+msgstr "页脚3"
+
+#: functions.php:146
+msgid "Footer 2"
+msgstr "页脚2"
+
+#: functions.php:139 functions.php:148 functions.php:159 functions.php:169
+msgid "Add widgets here."
+msgstr "在此处添加小工具。"
+
+#: functions.php:137
+msgid "Footer 1"
+msgstr "页脚1"
+
+#: functions.php:52 functions.php:299
+msgid "Primary"
+msgstr "主要"
+
+#. Theme URI of the theme
+msgid "https://motopress.com/products/getwid-base/"
+msgstr "https://motopress.com/products/getwid-base/"
+
+#. Author URI of the theme
+msgid "https://motopress.com/"
+msgstr "https://motopress.com/"
+
+#. Author of the theme
+msgid "MotoPress"
+msgstr "MotoPress"

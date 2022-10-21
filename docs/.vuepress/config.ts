@@ -4,7 +4,7 @@ import { searchPlugin } from '@vuepress/plugin-search'
 export default {
     lang: "zh-CN",
     title: "学习笔记",
-    dest: "dist",
+    dest: "md-notes",
     base: 'md-notes',
     description: "前端笔记、JavaScript、Vue、React", //  HTML 中表现为一个 <meta> 标签
     port: 3000, // dev 端口
@@ -75,7 +75,7 @@ export default {
                         {
                             text: '4、代码优化实例',
                         },
-                    ],
+                        ],
                     },
                 ],
             },
@@ -120,8 +120,17 @@ export default {
                 children: [
                     {
                         text: "一、React核心原理及核心源码",
-                        link: "/reactframe/reactCore.md",
-                        children: [],
+                        link: "/reactframe/virtualDomAndDiff.md",
+                        children: [
+                            {
+                                text: "1、Virtual DOM 及 Diff 算法",
+                                link: "/reactframe/virtualDomAndDiff.md",
+                            },
+                            {
+                                text: "2、React Fiber",
+                                link: "/reactframe/fiber.md",
+                            }
+                        ],
                     },
                     {
                         text: "二、React数据流方案",
