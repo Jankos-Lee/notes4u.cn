@@ -641,28 +641,5 @@ modelUpdater (node, value, key) {
 
 [Vue](https://github.com/DMQ/mvvm)
 
-```
-/**
- * 超时屏锁
- * @param unusedMinutes {Number} 屏幕未使用（点击）时间
- */
 
-const locksList = [];
-const setScreenLocker = (unusedMinutes = 10) => {
-  // 保证只有一个锁屏定时器，清除所有锁屏定时器
-  if (locksList && locksList.length) {
-    locksList.forEach((locker) => {
-      clearTimeout(locker);
-    });
-  }
-  const unusedSeconds = unusedMinutes * 60 * 1000;
-  const timer = setTimeout(() => {
-    // 开启屏锁
-  }, unusedSeconds);
-  locksList.push(timer);
-};
-
-export default setScreenLocker;
-
-```
 
