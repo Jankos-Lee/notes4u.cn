@@ -345,11 +345,11 @@ class Observer {
     // 如果 val 是对象，继续设置它下面的成员为响应式数据 
     this.walk(val) 
     Object.defineProperty(data, key, { 
-      configurable: true, enumerable: true, 
+      configurable: true, 
+      enumerable: true, 
       get () { return val },
       set (newValue) { 
-        if (newValue === val) { return 
-                              }
+        if (newValue === val) return 
         // 如果 newValue 是对象，设置 newValue 的成员为响应式 
         that.walk(newValue) 
         val = newValue
@@ -640,3 +640,29 @@ modelUpdater (node, value, key) {
 [深入响应式原理](https://v2.cn.vuejs.org/v2/guide/reactivity.html)
 
 [Vue](https://github.com/DMQ/mvvm)
+
+```
+/**
+ * 超时屏锁
+ * @param unusedMinutes {Number} 屏幕未使用（点击）时间
+ */
+
+const locksList = [];
+const setScreenLocker = (unusedMinutes = 10) => {
+  // 保证只有一个锁屏定时器，清除所有锁屏定时器
+  if (locksList && locksList.length) {
+    locksList.forEach((locker) => {
+      clearTimeout(locker);
+    });
+  }
+  const unusedSeconds = unusedMinutes * 60 * 1000;
+  const timer = setTimeout(() => {
+    // 开启屏锁
+  }, unusedSeconds);
+  locksList.push(timer);
+};
+
+export default setScreenLocker;
+
+```
+
