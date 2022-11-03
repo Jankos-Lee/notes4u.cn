@@ -121,7 +121,50 @@ export default {
                     {
                         text: "二、Vue源码浅析",
                         link: "/vueframe/vueSourceCode.md",
-                        children: [],
+                        children: [
+                            {
+                                text: "1、响应系统",
+                                // link: "/vueframe/vueSourceCode.md",
+                            },
+                            {
+                                text: "2、渲染器",
+                                // link: "/vueframe/vueSourceCode.md",
+                            },
+                            {
+                                text: "3、组件化",
+                                // link: "/vueframe/vueSourceCode.md",
+                            },
+                            {
+                                text: "4、编译器",
+                                // link: "/vueframe/vueSourceCode.md",
+                            },
+                            {
+                                text: "5、Diff 算法",
+                                // link: "/vueframe/vueSourceCode.md",
+                                children:[
+                                    {
+                                        text: "简单 Diff 算法",
+                                        // link: "/vueframe/vueSourceCode.md",
+                                    },
+                                    {
+                                        text: "双端 Diff 算法",
+                                        // link: "/vueframe/vueSourceCode.md",
+                                    },
+                                    {
+                                        text: "快速 Diff 算法",
+                                        // link: "/vueframe/vueSourceCode.md",
+                                    },
+                                ]
+                            },
+                        ],
+                    },
+                    {
+                        text: "三、Vuex 数据流管理以 ",
+                        // link: "/vueframe/vueSourceCode.md",
+                    },
+                    {
+                        text: "四、Vue.js 服务端渲染",
+                        // link: "/vueframe/vueSourceCode.md",
                     },
                 ],
             },
