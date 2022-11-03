@@ -103,17 +103,17 @@ export default {
                 children: [
                     {
                         text: "一、Vue.js基础",
-                        link: "/vueframe/basicVue.md",
+                        // link: "/vueframe/basicVueTheory.md",
                         children: [{
-                            text: "1.Vue 响应式原理浅析",
+                            text: "1、Vue 响应式原理浅析",
                             link: "/vueframe/basicVueTheory.md",
                         },
                         {
-                            text: "2.Vue Router 原理及实现",
+                            text: "2、Vue Router 原理及实现",
                             link: "/vueframe/basicVueRouter.md",
                         },
                         {
-                            text: "3.Vue VirtualDOM",
+                            text: "3、Vue VirtualDOM",
                             link: "/vueframe/basicVirtualDOM.md",
                         }
                     ],
