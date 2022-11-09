@@ -54,7 +54,8 @@ export default {
                     },
                     {
                         text: "四、ECMAScript 新特性",
-                        children: [],
+                        children: [
+                        ],
                     },
                     {
                         text: "五、TypeScript 语言 ",
