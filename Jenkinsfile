@@ -82,6 +82,9 @@ stages {
     stage('finished message'){
             steps {
                 echo 'fineshed...'
+                script {
+                    change = getChanges()
+                }
             }
             post {
                 success {
@@ -104,4 +107,27 @@ stages {
             }
         }
     }
+}
+
+@NonCPS
+def getChanges()
+{
+    MAX_MSG_LEN = 100
+    def changeString = ""
+    def changeLogSets = currentBuild.changeSets
+    for (int i = 0; i < changeLogSets.size(); i++) 
+    {
+        def entries = changeLogSets[i].items
+        for (int j = 0; j < entries.length; j++)
+        {
+            def entry = entries[j]
+            change_msg = entry.msg.take(MAX_MSG_LEN)
+            changeString += " ${change_msg} \n"
+        }
+    }
+    if (!changeString)
+    {
+        changeString = " No changes "
+    }
+    return changeString  
 }
