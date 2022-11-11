@@ -15,7 +15,6 @@ pipeline {
     }
 
     environment {
-		def git_url = ''
 		def PROJECT_NAME = 'md-notes' 
 		def COMPILE_PATH = ''
 		def change = ''
