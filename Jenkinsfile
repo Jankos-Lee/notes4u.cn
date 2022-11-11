@@ -35,7 +35,7 @@ stages {
                     def BUILDVERSION_DATE= inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
                 }
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
-                echo "${TEST} ----- ${BUILDVERSION_DATE}"
+                echo "${INFO} ----- ${BUILDVERSION_DATE}"
             }
             post {
                 success {
