@@ -16,7 +16,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'TEST', defaultValue: 'test------', description: '')
+        string(name: 'INFO', defaultValue: '-- 简述更新内容 --', description: '-- 简述更新内容 --')
     }
 
     environment {
@@ -25,16 +25,16 @@ pipeline {
 		def change = ''
 		def BUILD_USER = 'jankos'
         def BUILDVERSION_DATE = ''
-        // def now = new Date();
-        // def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
-        // def BUILDVERSION_DATE= inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
+        def now = new Date();
+        def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
+        def BUILDVERSION_DATE= inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
     }
     
 stages {
         stage('start message'){
             steps {
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
-                echo "${TEST}"
+                echo "${TEST} ----- ${BUILDVERSION_DATE}"
             }
             post {
                 success {
@@ -120,7 +120,7 @@ stages {
 @NonCPS
 def getChanges()
 {
-    MAX_MSG_LEN = 5
+    MAX_MSG_LEN = 50
     def changeString = ""
     def changeLogSets = currentBuild.changeSets
     for (int i = 0; i < changeLogSets.size(); i++) 
