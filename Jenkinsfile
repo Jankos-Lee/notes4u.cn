@@ -29,10 +29,10 @@ pipeline {
 stages {
         stage('start message'){
             steps {
-                script {
+                // script {
                     def now = new Date();
                     def currentDate = now.format("MM/dd/yyyy")
-                }
+                // }
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
                 echo "${INFO} ----- ${currentDate}"
             }
