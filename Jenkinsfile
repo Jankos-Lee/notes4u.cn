@@ -15,12 +15,11 @@ pipeline {
     }
 
     environment {
-		def git_url = 
-		def PROJECT_NAME = 
-		def COMPILE_PATH = "
-		def HOSTS = '
+		def git_url = ''
+		def PROJECT_NAME = 'md-notes' 
+		def COMPILE_PATH = ''
 		def change = ''
-		def BUILD_USER = ''
+		def BUILD_USER = 'jankos'
     }
     
 stages {
