@@ -34,7 +34,7 @@ stages {
                     // def currentDate = now.format("MM/dd/yyyy")
                 // }
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
-                echo "${INFO} ----- ${currentDate}"
+                // echo "${INFO} ----- ${currentDate}"
             }
             post {
                 success {
