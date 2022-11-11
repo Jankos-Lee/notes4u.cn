@@ -35,25 +35,24 @@ stages {
                 def now = new Date();
                 def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
                 def BUILDVERSION_DATE=inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
+            }
+        }
 
+        post {
+            success {
+                dingtalk (
+                    robot: 'SECc447a58583c5b67e7df21836d0b788c852bb4b8c311d746709a0785789ccf7d3',
+                    type: 'TEXT',
+                    atAll:true,
+                    messageUrl: 'https://github.com/Jankos-Lee/notes4u.cn',
+                    picUrl: 'http://notes4u.cn/cool/',
+                    text: [
+                        "开始构建项目: ### [${env.JOB_NAME}](${env.JOB_URL}) ###"
+                        "开始构建时间: ### ${BUILDVERSION_DATE} ### ",
+                    ],
+                )
             }
-            }
-
-            post {
-                success {
-                    dingtalk (
-                        robot: 'SECc447a58583c5b67e7df21836d0b788c852bb4b8c311d746709a0785789ccf7d3',
-                        type: 'TEXT',
-                        atAll:true,
-                        messageUrl: 'https://github.com/Jankos-Lee/notes4u.cn',
-                        picUrl: 'http://notes4u.cn/cool/',
-                        text: [
-                            "开始构建项目: ### [${env.JOB_NAME}](${env.JOB_URL}) ###"
-                            "开始构建时间: ### $BUILDVERSION_DATE ### ",
-                        ],
-                    )
-                }
-            }
+        }
         }
     stage('Pull code') {
         steps {
