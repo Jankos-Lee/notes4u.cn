@@ -34,10 +34,8 @@ stages {
         stage('start message'){
             steps {
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
-                echo $TEST
-
+                echo "${TEST}"
             }
-
             post {
                 success {
                     dingtalk (
