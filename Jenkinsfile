@@ -1,6 +1,7 @@
 import java.text.SimpleDateFormat
 import hudson.model.*
 
+// TBD: 增加构建时间通知、手动配置参数选择
 pipeline {
     agent any
     tools { nodejs "node"}
@@ -33,24 +34,23 @@ stages {
         stage('start message'){
             steps {
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
-                echo 'echo"BUILD_DATE=$(date +%F-%T)"'
-        }
-
-        post {
-            success {
-                dingtalk (
-                    robot: 'SECc447a58583c5b67e7df21836d0b788c852bb4b8c311d746709a0785789ccf7d3',
-                    type: 'TEXT',
-                    atAll:true,
-                    messageUrl: 'https://github.com/Jankos-Lee/notes4u.cn',
-                    picUrl: 'http://notes4u.cn/cool/',
-                    text: [
-                        "开始构建项目: ### [${env.JOB_NAME}](${env.JOB_URL}) ###"
-                        // "开始构建时间: ### ${BUILDVERSION_DATE} ### ",
-                    ],
-                )
             }
-        }
+
+            post {
+                success {
+                    dingtalk (
+                        robot: 'SECc447a58583c5b67e7df21836d0b788c852bb4b8c311d746709a0785789ccf7d3',
+                        type: 'TEXT',
+                        atAll:true,
+                        messageUrl: 'https://github.com/Jankos-Lee/notes4u.cn',
+                        picUrl: 'http://notes4u.cn/cool/',
+                        text: [
+                            "开始构建项目: ### [${env.JOB_NAME}](${env.JOB_URL}) ###"
+                            // "开始构建时间: ### ${BUILDVERSION_DATE} ### ",
+                        ],
+                    )
+                }
+            }
         }
     stage('Pull code') {
         steps {
@@ -120,7 +120,7 @@ stages {
 @NonCPS
 def getChanges()
 {
-    MAX_MSG_LEN = 100
+    MAX_MSG_LEN = 5
     def changeString = ""
     def changeLogSets = currentBuild.changeSets
     for (int i = 0; i < changeLogSets.size(); i++) 
