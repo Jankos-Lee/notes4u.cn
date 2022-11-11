@@ -24,6 +24,9 @@ pipeline {
 		def change = ''
 		def BUILD_USER = 'jankos'
         def BUILDVERSION_DATE = ''
+        def now = new Date();
+        def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
+        def BUILDVERSION_DATE= inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
     }
     
 stages {
@@ -31,11 +34,6 @@ stages {
             steps {
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
                 echo 'echo"BUILD_DATE=$(date +%F-%T)"'
-                script {
-                def now = new Date();
-                def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
-                def BUILDVERSION_DATE=inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
-            }
         }
 
         post {
