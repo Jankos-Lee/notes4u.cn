@@ -17,6 +17,10 @@ pipeline {
 
     parameters {
         string(name: 'INFO', defaultValue: '-- 简述更新内容 --', description: '-- 简述更新内容 --')
+        string(name: 'REQUEST_URL', defaultValue: '-- 简述更新内容 --', description: '-- 输入请求地址 --')
+        string(name: 'ENT_CODE', defaultValue: '-- 简述更新内容 --', description: '-- 输入企业号 --')
+        string(name: 'VUE_APP_TITLE', defaultValue: '-- 简述更新内容 --', description: '-- 输入应用名称 --')
+
     }
 
     environment {
@@ -33,6 +37,9 @@ stages {
                     // def now = new Date();
                     // def currentDate = now.format("MM/dd/yyyy")
                 // }
+                // 测试 build.sh 脚本中的变量
+                sh "sh build.sh ${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
+                echo "${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
                 // echo "${INFO} ----- ${currentDate}"
                 echo "${INFO} ----- "
@@ -56,7 +63,7 @@ stages {
     stage('Pull code') {
         steps {
             // Get branch lastest code from a GitHub repository
-            echo '--------------------------------  start pull code  --------------------------------'
+            echo '--------------------------------  pull code  --------------------------------'
             git branch: 'main',
                 credentialsId: '49ce9a38-48b5-4580-b93c-f7928677760f',
                 url: 'git@github.com:Jankos-Lee/notes4u.cn.git'
