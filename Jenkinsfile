@@ -14,18 +14,24 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
     }
 
+    parameters {
+        string(name: 'TEST', defaultValue: 'test------', description: '')
+    }
+
     environment {
 		def PROJECT_NAME = 'md-notes' 
 		def COMPILE_PATH = ''
 		def change = ''
 		def BUILD_USER = 'jankos'
-        def BUILD_DATE = ${DATE}
+        def BUILDVERSION_DATE = ''
     }
     
 stages {
         stage('start message'){
             steps {
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
+                echo '$TEST'
+
             }
             script {
                 def now = new Date();
@@ -42,7 +48,7 @@ stages {
                         picUrl: 'http://notes4u.cn/cool/',
                         text: [
                             "开始构建项目: ### [${env.JOB_NAME}](${env.JOB_URL}) ###"
-                            "开始构建时间: ### ${BUILDVERSION_DATE} ### ",
+                            "开始构建时间: ### $BUILDVERSION_DATE ### ",
                         ],
                     )
                 }
