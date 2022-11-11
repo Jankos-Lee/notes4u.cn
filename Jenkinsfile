@@ -35,6 +35,7 @@ stages {
                 // }
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
                 // echo "${INFO} ----- ${currentDate}"
+                echo "${INFO} ----- "
             }
             post {
                 success {
