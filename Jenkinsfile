@@ -31,11 +31,10 @@ stages {
             steps {
                 script {
                     def now = new Date();
-                    def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
-                    def BUILDVERSION_DATE= inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
+                    def currentDate = now.format("MM/dd/yyyy")
                 }
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
-                echo "${INFO} ----- ${BUILDVERSION_DATE}"
+                echo "${INFO} ----- ${currentDate}"
             }
             post {
                 success {
