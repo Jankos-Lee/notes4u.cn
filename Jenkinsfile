@@ -5,6 +5,24 @@ pipeline {
     agent any
     tools { nodejs "node"}
     
+    options {
+        // 表示保留5次构建历史
+        buildDiscarder(logRotator(numToKeepStr: '5'))
+        // 打印日志带上对应时间
+        timestamps()
+        // 任务时间超过10分钟，终止构建
+        timeout(time: 10, unit: 'MINUTES')
+    }
+
+    environment {
+		def git_url = 
+		def PROJECT_NAME = 
+		def COMPILE_PATH = "
+		def HOSTS = '
+		def change = ''
+		def BUILD_USER = ''
+    }
+    
 stages {
         stage('start message'){
             steps {
