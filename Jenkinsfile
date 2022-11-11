@@ -24,14 +24,16 @@ pipeline {
 		def COMPILE_PATH = ''
 		def change = ''
 		def BUILD_USER = 'jankos'
-        def now = new Date();
-        def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
-        def BUILDVERSION_DATE= inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
     }
     
 stages {
         stage('start message'){
             steps {
+                script {
+                    def now = new Date();
+                    def inOneHour = new Date(now.getTime() + 1 * 3600 * 1000);
+                    def BUILDVERSION_DATE= inOneHour.format("yyyy-MM-dd-HH-mm-ss", TimeZone.getTimeZone('UTC'))
+                }
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
                 echo "${TEST} ----- ${BUILDVERSION_DATE}"
             }
