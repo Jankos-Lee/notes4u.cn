@@ -211,6 +211,19 @@ export default {
                 ],
             },
             {
+                text: "常用工具类",
+                // 可折叠的侧边栏
+                collapsible: true,
+                // link: "/commonTools/linux.md",
+                children: [
+                    {
+                        text: "linux 常用命令",
+                        link: "/commonTools/linux.md",
+                        children: [],
+                    },
+                ],
+            },
+            {
                 text: "前端面试题汇总",
                 // 可折叠的侧边栏
                 // collapsible: true,
