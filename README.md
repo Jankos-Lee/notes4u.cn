@@ -4,4 +4,3 @@
 **node verions >= 14** 
 
 ##### husky
-test
