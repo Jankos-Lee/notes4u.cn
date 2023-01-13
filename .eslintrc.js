@@ -4,7 +4,7 @@ module.exports = {
       es6: true, // 启用 ES6 语法支持以及新的 ES6 全局变量或类型
       node: true // Node.js 全局变量和 Node.js 作用域
     },
-    extends: ['plugin:vue/essential', '@vue/standard'],
+    extends: [],
     rules: {
       'no-alert': 0, // 禁止使用alert confirm prompt
       'no-console': 0, // 禁止使用console
