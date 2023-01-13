@@ -1,3 +1,3 @@
 console.log(process.env)  
 
-console.log('testteteataeteaa')
+console.log('12312312312')
