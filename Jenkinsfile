@@ -37,6 +37,8 @@ stages {
                     // def now = new Date();
                     // def currentDate = now.format("MM/dd/yyyy")
                 // }
+                // 开始构建时间
+                echo date
                 // 测试 build.sh 脚本中的变量
                 sh "sh build.sh ${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
                 echo "${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
