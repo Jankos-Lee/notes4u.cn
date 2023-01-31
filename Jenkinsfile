@@ -20,9 +20,6 @@ pipeline {
         string(name: 'REQUEST_URL', defaultValue: '-- 简述更新内容 --', description: '-- 输入请求地址 --')
         string(name: 'ENT_CODE', defaultValue: '-- 简述更新内容 --', description: '-- 输入企业号 --')
         string(name: 'VUE_APP_TITLE', defaultValue: '-- 简述更新内容 --', description: '-- 输入应用名称 --')
-
-        string(name: 'BUILD_TIME', defaultValue: '-- 开始构建时间 --', description: '-- 开始构建时间 --')
-        string(name: 'FINISHED_TIME', defaultValue: '-- 结束构建时间 --', description: '-- 结束构建时间 --')
     }
 
     environment {
