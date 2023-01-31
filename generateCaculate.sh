@@ -5,7 +5,7 @@ startTime=`date +%Y%m%d-%H:%M:%S`
 startTime_s=`date +%s`
 
 # write the temp file to record the start build timestamp and calculate the execution time for this build
-tempfile=`mktemp calulate.sh`
+tempfile=`touch calulate.sh`
 exec 3>$tempfile
 
 echo "This script writes to temp file $tempfile"

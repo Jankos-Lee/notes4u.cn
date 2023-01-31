@@ -103,10 +103,10 @@ stages {
     stage('finished message'){
             steps {
                 echo 'fineshed...'
+                sh "sh finished.sh"
                 script {
                     change = getChanges()
                 }
-                sh "sh finished.sh"
             }
             post {
                 success {
