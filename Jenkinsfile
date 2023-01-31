@@ -21,6 +21,8 @@ pipeline {
         string(name: 'ENT_CODE', defaultValue: '-- 简述更新内容 --', description: '-- 输入企业号 --')
         string(name: 'VUE_APP_TITLE', defaultValue: '-- 简述更新内容 --', description: '-- 输入应用名称 --')
 
+        string(name: 'BUILD_TIME', defaultValue: '-- 开始构建时间 --', description: '-- 开始构建时间 --')
+        string(name: 'FINISHED_TIME', defaultValue: '-- 结束构建时间 --', description: '-- 结束构建时间 --')
     }
 
     environment {
@@ -37,10 +39,9 @@ stages {
                     // def now = new Date();
                     // def currentDate = now.format("MM/dd/yyyy")
                 // }
-                // 开始构建时间
-                echo date
                 // 测试 build.sh 脚本中的变量
                 sh "sh build.sh ${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
+                sh "sh generateCaculate.sh"
                 echo "${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
                 // echo "${INFO} ----- ${currentDate}"
