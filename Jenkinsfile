@@ -35,13 +35,10 @@ pipeline {
 stages {
         stage('start message'){
             steps {
-                // script {
-                    // def now = new Date();
-                    // def currentDate = now.format("MM/dd/yyyy")
-                // }
                 // 测试 build.sh 脚本中的变量
                 sh "sh build.sh ${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
-                sh "sh generateCaculate.sh"
+                // TBD: log this build time
+                // sh "sh generateCaculate.sh"
                 echo "${REQUEST_URL} ${ENT_CODE} ${VUE_APP_TITLE}"
                 echo '--------------------------------  send start message to dingtalk --------------------------------'
                 // echo "${INFO} ----- ${currentDate}"
@@ -103,7 +100,7 @@ stages {
     stage('finished message'){
             steps {
                 echo 'fineshed...'
-                sh "sh finished.sh"
+                // sh "sh finished.sh"
                 script {
                     change = getChanges()
                 }
