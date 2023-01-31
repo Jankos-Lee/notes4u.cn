@@ -106,6 +106,7 @@ stages {
                 script {
                     change = getChanges()
                 }
+                sh "sh finished.sh"
             }
             post {
                 success {
