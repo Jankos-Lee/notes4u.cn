@@ -12,7 +12,6 @@ Angular 为大型应用开发而设计，提供了干净且松耦合的代码组
 
 ### 2. 架构预览
 
-<img src="./images/1.png"/>
 
 #### 2.1 模块
 
@@ -144,11 +143,6 @@ Angular 会根据你指定的服务的类型来传递你想要使用的服务实
    7. --inlineStyle
    8. --prefix
 
-   <img src="./images/58.png" width="60%" align="left"/>
-
-   <img src="./images/59.png" width="60%" align="left"/>
-
-   <img src="./images/60.png" width="60%" align="left"/>
 
 3. 运行应用：`ng serve`
 
@@ -159,7 +153,6 @@ Angular 会根据你指定的服务的类型来传递你想要使用的服务实
 
 4. 访问应用：`localhost:4200`
 
-   <img src="./images/3.png"/>
 
 #### 3.2 默认代码解析
 
@@ -187,7 +180,6 @@ platformBrowserDynamic()
   .catch(err => console.error(err))
 ```
 
-<img src="./images/61.png" align="left" width="60%"/>
 
 ##### 3.2.2 environment.ts
 
@@ -274,7 +266,6 @@ export class AppComponent {}
 </html>
 ```
 
-<img src="./images/2.jpg"/>
 
 #### 3.3 共享模块
 
@@ -784,7 +775,6 @@ export class AppComponent {
 
 ### 8. 组件生命周期
 
-<img src="./images/4.png" align="left" width="50%"/>
 
 #### 8.1 挂载阶段
 
@@ -1282,11 +1272,8 @@ input.ng-touched.ng-invalid {
 
 在模型驱动表单中，表单字段需要是 FormControl 类的实例，实例对象可以验证表单字段中的值，值是否被修改过等等
 
-<img src="./images/6.jpg" />
 
 一组表单字段构成整个表单，整个表单需要是 FormGroup 类的实例，它可以对表单进行整体验证。
-
-<img src="./images/7.jpg" />
 
 1. FormControl：表单组中的一个表单项
 2. FormGroup：表单组，表单至少是一个 FormGroup
@@ -2248,7 +2235,6 @@ export class HomeComponent {
 
 #### 13.1 概述
 
-<img src="./images/65.png" align="left" width="120"/>
 
 ##### 13.1.1 什么是 RxJS ?
 
@@ -2268,7 +2254,6 @@ RxJS 是一个用于处理异步编程的  JavaScript 库，目标是使编写�
 
 3. 订阅 ( subscribe )：类比 then 方法，通过订阅将可观察对象和观察者连接起来，当可观察对象发出数据时，订阅者可以接收到数据。
 
-   <img src="./images/63.png" align="left"/>
 
    ```typescript
    import { Observable } from "rxjs"
@@ -2378,8 +2363,6 @@ RxJS 是一个用于处理异步编程的  JavaScript 库，目标是使编写�
 
 5. 可观察对象可以有 n 多订阅者，每次被订阅时都会得到执行
 
-   <img src="./images/64.png" align="left"/>
-
    ```javascript
    const observable = new Observable(function () {
      console.log("Hello RxJS")
@@ -2462,7 +2445,6 @@ setTimeout(function () {
 
 range(start, length)，调用方法后返回 observable 对象，被订阅后会发出指定范围的数值。
 
-<img src="./images/9.png" width="80%" align="left"/>
 
 ```javascript
 import { range } from "rxjs"
@@ -2482,8 +2464,6 @@ range(0, 5).subscribe(n => console.log(n))
 
 将参数列表作为数据流返回。
 
-<img src="./images/5.png" width="80%" align="left"/>
-
 ```javascript
 of("a", "b", [], {}, true, 20).subscribe(v => console.log(v))
 ```
@@ -2491,8 +2471,6 @@ of("a", "b", [], {}, true, 20).subscribe(v => console.log(v))
 ##### 13.3.3 from
 
 将 Array，Promise, Iterator 转换为 observable 对象。
-
-<img src="./images/10.png" width="80%" align="left"/>
 
 ```javascript
 from(["a", "b", "c"]).subscribe(v => console.log(v))
@@ -2518,8 +2496,6 @@ from(p()).subscribe(v => console.log(v))
 
 **Interval：**每隔一段时间发出一个数值，数值递增
 
-<img src="./images/11.png" width="80%" align="left"/>
-
 ```javascript
 import { interval } from "rxjs"
 
@@ -2527,8 +2503,6 @@ interval(1000).subscribe(n => console.log(n))
 ```
 
 **timer：**间隔时间过去以后发出数值，行为终止，或间隔时间发出数值后，继续按第二个参数的时间间隔继续发出值
-
-<img src="./images/12.png" width="80%" align="left"/>
 
 ```javascript
 import { timer } from "rxjs"
@@ -2541,8 +2515,6 @@ timer(0, 1000).subscribe(n => console.log(n))
 
 合并数据流，先让第一个数据流发出值，结束后再让第二个数据流发出值，进行整体合并。
 
-<img src="./images/8.png" width="80%" align="left"/>
-
 ```javascript
 import { concat, range } from "rxjs"
 
@@ -2552,8 +2524,6 @@ concat(range(1, 5), range(6, 5)).subscribe(console.log)
 ##### 13.3.6 merge
 
 合并数据流，多个参数一起发出数据流，按照时间线进行交叉合并。
-
-<img src="./images/33.png" width="80%" align="left"/>
 
 ```javascript
 import { merge, fromEvent, interval } from "rxjs"
@@ -2567,8 +2537,6 @@ merge(clicks, timer).subscribe(console.log)
 ##### 13.3.7 combineLatest
 
 将两个 Obserable 中最新发出的数据流进行组合成新的数据流，以数组的形式发出。和当前最新的进行组合。
-
-<img src="./images/40.png" width="80%" align="left"/>
 
 ```javascript
 import { combineLatest, timer } from "rxjs"
@@ -2586,8 +2554,6 @@ combineLatest(firstTimer, secondTimer).subscribe(console.log)
 ##### 13.3.8 zip
 
 将多个 Observable 中的数据流进行组合。和将来最新的进行组合。
-
-<img src="./images/39.png" width="80%" align="left"/>
 
 ```javascript
 import { zip, of } from "rxjs"
@@ -2610,8 +2576,6 @@ zip(name, age, isDev)
 
 forkJoin 是 Rx 版本的 Promise.all()，即表示等到所有的 Observable 都完成后，才一次性返回值。
 
-<img src="./images/41.png" width="80%" align="left"/>
-
 ```javascript
 import axios from "axios"
 import { forkJoin, from } from "rxjs"
@@ -2628,8 +2592,6 @@ forkJoin({
 
 返回可观察对象并向订阅者抛出错误。
 
-<img src="./images/42.png" width="80%" align="left"/>
-
 ```javascript
 import { throwError } from "rxjs"
 
@@ -2639,8 +2601,6 @@ throwError("发生了未知错误").subscribe({ error: console.log })
 ##### 13.3.11 retry
 
 如果 Observable 对象抛出错误，则该辅助方法会重新订阅 Observable 以获取数据流，参数为重新订阅次数。
-
-<img src="./images/43.png" width="80%" align="left"/>
 
 ```javascript
 import { interval, of, throwError } from "rxjs"
@@ -2698,8 +2658,6 @@ fromEvent(btn, "click").subscribe(e => console.log(e))
 
 **map：**对数据流进行转换，基于原有值进行转换。
 
-<img src="./images/13.png" width="80%" align="left"/>
-
 ```javascript
 import { interval } from "rxjs"
 import { map } from "rxjs/operators"
@@ -2710,8 +2668,6 @@ interval(1000)
 ```
 
 **mapTo：**对数据流进行转换，不关心原有值，可以直接传入要转换后的值。
-
-<img src="./images/14.png" width="80%" align="left"/>
 
 ```javascript
 import { interval } from "rxjs"
@@ -2726,8 +2682,6 @@ interval(1000)
 
 对数据流进行过滤。
 
-<img src="./images/15.png" width="80%" align="left"/>
-
 ```javascript
 import { range } from "rxjs"
 import { filter } from "rxjs/operators"
@@ -2740,8 +2694,6 @@ range(1, 10)
 ##### 13.4.3 pluck
 
 获取数据流对象中的属性值。
-
-<img src="./images/16.png" width="80%" align="left"/>
 
 ```javascript
 import { interval } from "rxjs"
@@ -2758,8 +2710,6 @@ interval(1000)
 ##### 13.4.4 first
 
 获取数据流中的第一个值或者查找数据流中第一个符合条件的值，类似数组中的 find 方法。获取到值以后终止行为。
-
-<img src="./images/17.png" width="80%" align="left"/>
 
 ```javascript
 import { interval } from "rxjs"
@@ -2779,8 +2729,6 @@ interval(1000)
 创建一个新的 observable 对象并将参数值发送出去，然后再发送源 observable 对象发出的值。
 
 在异步编程中提供默认值的时候非常有用。
-
-<img src="./images/18.png" width="80%" align="left"/>
 
 ```javascript
 import { interval } from "rxjs"
@@ -2803,8 +2751,6 @@ interval(1000)
 
 查看数据流中的每个值是否都符合条件，返回布尔值。类似数组中的 every 方法。
 
-<img src="./images/28.png" width="60%" align="left"/>
-
 ```javascript
 import { range } from "rxjs"
 import { every, map } from "rxjs/operators"
@@ -2820,8 +2766,6 @@ range(1, 9)
 ##### 13.4.7 delay、delayWhen
 
 **delay：**对上一环节的操作整体进行延迟，只执行一次。
-
-<img src="./images/19.png" width="80%" align="left"/>
 
 ```javascript
 import { from } from "rxjs"
@@ -2842,8 +2786,6 @@ from([1, 2, 3])
 
 **delayWhen：**对上一环节的操作进行延迟，上一环节发出多少数据流，传入的回调函数就会执行多次。
 
-<img src="./images/20.png" width="80%" align="left"/>
-
 ```javascript
 import { range, timer } from "rxjs"
 import { delayWhen } from "rxjs/operators"
@@ -2862,8 +2804,6 @@ range(1, 10)
 
 **take**：获取数据流中的前几个
 
-<img src="./images/21.png" width="80%" align="left"/>
-
 ```javascript
 import { range } from "rxjs"
 import { take } from "rxjs/operators"
@@ -2872,8 +2812,6 @@ range(1, 10).pipe(take(5)).subscribe(console.log)
 ```
 
 **takeWhile：**根据条件从数据源前面开始获取。
-
-<img src="./images/22.png" width="80%" align="left"/>
 
 ```javascript
 import { range } from "rxjs"
@@ -2885,8 +2823,6 @@ range(1, 10)
 ```
 
 **takeUntil：**接收可观察对象，当可观察对象发出值时，终止主数据源。
-
-<img src="./images/23.png" width="80%" align="left"/>
 
 ```javascript
 import { interval, timer } from "rxjs"
@@ -2902,8 +2838,6 @@ interval(100)
 
 **skip：**跳过前几个数据流。
 
-<img src="./images/24.png" width="80%" align="left"/>
-
 ```javascript
 import { range } from "rxjs"
 import { skip } from "rxjs/operators"
@@ -2912,8 +2846,6 @@ range(1, 10).pipe(skip(5)).subscribe(console.log)
 ```
 
 **skipWhile：**根据条件进行数据流的跳过。
-
-<img src="./images/25.png" width="80%" align="left"/>
 
 ```javascript
 import { range } from "rxjs"
@@ -2925,8 +2857,6 @@ range(1, 10)
 ```
 
 **skipUntil：**跳过数据源中前多少时间发出的数据流，发送从这个时间以后数据源中发送的数据流。
-
-<img src="./images/26.png" width="80%" align="left"/>
 
 ```javascript
 import { timer, interval } from "rxjs"
@@ -2940,8 +2870,6 @@ interval(100)
 ##### 13.4.10 last
 
 获取数据流中的最后一个。
-
-<img src="./images/27.png" width="80%" align="left"/>
 
 ```javascript
 import { range } from "rxjs"
@@ -2966,8 +2894,6 @@ interval(1000).pipe(take(5), last()).subscribe(console.log)
 Observable => [1, 2, 3]
 
 Observable => [Observable, Observable]
-
-<img src="./images/29.png" width="80%" align="left"/>
 
 ```javascript
 import { fromEvent, interval } from "rxjs"
@@ -2995,13 +2921,9 @@ interval(1000)
 
 **concatMap：**合并可观察对象并处理其发出的数据流。
 
-<img src="./images/30.png" width="80%" align="left"/>
-
 ##### 13.4.13 reduce、scan
 
 **reduce**: 类似 JavaScript 数组中的 reduce，对数数据进行累计操作。reduce 会等待数据源中的数据流发送完成后再执行，执行时 reduce 内部遍历每一个数据流进行累计操作，操作完成得到结果将结果作为数据流发出。
-
-<img src="./images/31.png" width="80%" align="left"/>
 
 ```javascript
 import { interval } from "rxjs"
@@ -3016,8 +2938,6 @@ interval(500)
 ```
 
 **scan**：类似 reduce，进行累计操作，但执行时机不同，数据源每次发出数据流 scan 都会执行。reduce 是发送出最终计算的结果，而 scan 是发出每次计算的结果。
-
-<img src="./images/32.png" width="80%" align="left"/>
 
 ```javascript
 import { interval } from "rxjs"
@@ -3035,8 +2955,6 @@ interval(500)
 
 **mergeAll：**交叉合并可观察对象。
 
-<img src="./images/34.png" width="80%" align="left"/>
-
 ```javascript
 import { fromEvent, interval } from "rxjs"
 import { map, mergeAll } from "rxjs/operators"
@@ -3051,8 +2969,6 @@ fromEvent(document, "click")
 
 **mergeMap**：交叉合并可观察对象以后对可观察对象发出的数据流进行转换。
 
-<img src="./images/35.png" width="80%" align="left"/>
-
 ```javascript
 import { of, interval } from "rxjs"
 import { mergeMap, map } from "rxjs/operators"
@@ -3065,8 +2981,6 @@ of("a", "b", "c")
 ##### 13.4.15 throttleTime
 
 节流，可观察对象高频次向外部发出数据流，通过 throttleTime 限制在规定时间内每次只向订阅者传递一次数据流。
-
-<img src="./images/36.png" width="80%" align="left"/>
 
 ```javascript
 import { fromEvent } from "rxjs"
@@ -3081,8 +2995,6 @@ fromEvent(document, "click")
 
 防抖，触发高频事件，只响应最后一次。
 
-<img src="./images/37.png" width="80%" align="left"/>
-
 ```javascript
 import { fromEvent } from "rxjs"
 import { debounceTime } from "rxjs/operators"
@@ -3096,8 +3008,6 @@ fromEvent(document, "click")
 
 检测数据源当前发出的数据流是否和上次发出的相同，如相同，跳过，不相同，发出。
 
-<img src="./images/38.png" width="80%" align="left"/>
-
 ```javascript
 import { of } from "rxjs"
 import { distinctUntilChanged } from "rxjs/operators"
@@ -3110,8 +3020,6 @@ of(1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4)
 ##### 13.4.18 groupBy
 
 对数据流进行分组。
-
-<img src="./images/44.png" width="80%" align="left"/>
 
 ```javascript
 import { of } from "rxjs"
@@ -3138,8 +3046,6 @@ of(
 
 主数据源发出的数据流总是和支数据源中的最新数据流进行结合，返回数组。
 
-<img src="./images/45.png" width="80%" align="left"/>
-
 ```javascript
 import { fromEvent, interval } from "rxjs"
 import { withLatestFrom } from "rxjs/operators"
@@ -3152,8 +3058,6 @@ clicks.pipe(withLatestFrom(timer)).subscribe(console.log)
 ##### 13.4.20 switchMap
 
 切换可观察对象。
-
-<img src="./images/46.png" width="80%" align="left"/>
 
 ```javascript
 import { fromEvent, interval } from "rxjs"
@@ -3438,10 +3342,6 @@ this.http.get(
 
 `ng g interceptor <name>`
 
-<img src="./images/47.png"/>
-
-<img src="./images/48.png"/>
-
 ##### 14.6.1 请求拦截
 
 ```javascript
@@ -3544,8 +3444,6 @@ import { HTTP_INTERCEPTORS } from "@angular/common/http"
 #### 15.1 概述
 
 NgRx 是 Angular 应用中实现全局状态管理的 Redux 架构解决方案。
-
-<img src="./images/49.png" align="left" width="80%"/>
 
 1. @ngrx/store：全局状态管理模块
 2. @ngrx/effects：处理副作用
@@ -3898,7 +3796,6 @@ export class AboutComponent {
 
 ### 16. 动画
 
-<img src="./images/55.gif"/>
 
 #### 16.1 状态
 
@@ -3906,13 +3803,9 @@ export class AboutComponent {
 
 状态表示的是要进行运动的元素在运动的不同时期所呈现的样式。
 
-<img src="./images/50.png" align="left" width="60%"/>
-
 ##### 16.6.2 状态的种类
 
 在 Angular 中，有三种类型的状态，分别为：`void`、`*`、`custom`
-
-<img src="./images/51.png" align="left" width="55%"/>
 
 void：当元素在内存中创建好但尚未被添加到 DOM 中或将元素从 DOM 中删除时会发生此状态
 
@@ -3924,11 +3817,9 @@ custom：自定义状态，元素默认就在页面之中，从一个状态运�
 
 进场动画是指元素被创建后以动画的形式出现在用户面前，进场动画的状态用 `void => *` 表示，别名为 `:enter`
 
-<img src="./images/52.png" align="left" width="55%"/>
 
 出场动画是指元素在被删除前执行的一段告别动画，出场动画的状态用 `* => void`，别名为 `:leave`
 
-<img src="./images/53.png" align="left" width="55%"/>
 
 #### 16.2 快速上手
 
@@ -4018,8 +3909,8 @@ custom：自定义状态，元素默认就在页面之中，从一个状态运�
    })
    ```
 
-   ```html
-<li @slide></li>
+   ```text
+<!-- <li @slide></li> --> 注释了不然编译不通过
    ```
    
    注意：入场动画中可以不指定元素的默认状态，Angular 会将 void 状态清空作为默认状态
@@ -4235,8 +4126,6 @@ transition(":enter", [
 
 Angular 提供了 `state` 方法用于定义状态。
 
-<img src="./images/56.gif" />
-
 1. 默认代码解析
 
    ```html
@@ -4322,8 +4211,6 @@ Angular 提供了 `state` 方法用于定义状态。
    ```
 
 #### 16.9 路由动画
-
-<img src="./images/57.gif"/>
 
 1. 为路由添加状态标识，此标识即为路由执行动画时的自定义状态
 
