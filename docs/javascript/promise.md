@@ -12,7 +12,7 @@
 * 已兑现（fulfilled）：意味着操作成功完成。
 * 已拒绝（rejected）：意味着操作失败。
 
-#### #Promise# 基本使用
+#### `Promise` 基本使用
 
 ```javascript
 const myPromise = new Promise((resolve, reject) => {
@@ -28,7 +28,7 @@ myPromise
 
 ```
 
-### #Promise# 简单复刻
+### `Promise` 简单复刻
 
 ```javascript
 /*
