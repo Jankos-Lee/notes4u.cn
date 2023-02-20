@@ -50,6 +50,7 @@ export default {
                     },
                     {
                         text: "三、Promise源码",
+                        link: "/javascript/promise.md",
                         children: [],
                     },
                     {
