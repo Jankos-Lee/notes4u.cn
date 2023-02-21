@@ -52,7 +52,7 @@
 
 ```
 
-> 示例
+示例
     ```javascript
     function objGroup(obj1, obj2) {
         obj1.next = obj2
@@ -70,6 +70,6 @@
     // 找到 obj1 {name: 'obj1'} 的路径被删除了，就导致其没有被引用，变成了垃圾。
 
     ```
- [示例](../../images/demo.png)
+ ![示例](../../images/demo.png)
 
 ### GC里的垃圾
