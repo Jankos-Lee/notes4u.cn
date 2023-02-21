@@ -54,30 +54,26 @@ export default {
                         children: [],
                     },
                     {
-                        text: "四、ECMAScript 新特性",
-                        children: [
-                        ],
-                    },
-                    {
-                        text: "五、TypeScript 语言 ",
+                        text: "四、TypeScript 语言 ",
                         link: "/javascript/typeScript.md",
                         children: [],
                     },
                     {
-                        text: "六、JavaScript 性能优化",
-                        children: [{
-                            text: '1、内存管理',
-                        },
-                        {
-                            text: '2、垃圾回收与常见GC算法',
-                        },
-                        {
-                            text: '3、V8引擎的垃圾回收',
-                        },
-                        {
-                            text: '4、代码优化实例',
-                        },
-                        ],
+                        text: "五、JavaScript 性能优化",
+                        link: "/javascript/performance.md",
+                        // children: [{
+                        //     text: '1、内存管理',
+                        // },
+                        // {
+                        //     text: '2、垃圾回收与常见GC算法',
+                        // },
+                        // {
+                        //     text: '3、V8引擎的垃圾回收',
+                        // },
+                        // {
+                        //     text: '4、代码优化实例',
+                        // },
+                        // ],
                     },
                 ],
             },
