@@ -49,7 +49,7 @@ export default {
                         children: [],
                     },
                     {
-                        text: "三、Promise源码",
+                        text: "三、Promise 源码",
                         link: "/javascript/promise.md",
                         children: [],
                     },
@@ -89,12 +89,12 @@ export default {
                 ],
             },
             {
-                text: "Vue.js框架原理",
+                text: "Vue.js 框架原理",
                 // 可折叠的侧边栏
                 collapsible: true,
                 children: [
                     {
-                        text: "一、Vue.js基础",
+                        text: "一、Vue.js 基础",
                         // link: "/vueframe/basicVueTheory.md",
                         children: [{
                             text: "1、Vue 响应式原理浅析",
@@ -111,7 +111,7 @@ export default {
                         ],
                     },
                     {
-                        text: "二、Vue源码浅析",
+                        text: "二、Vue 源码浅析",
                         link: "/vueframe/vueSourceCode.md",
                         children: [
                             {
