@@ -62,7 +62,7 @@ export default {
                         text: "五、JavaScript 性能优化",
                         children: [{
                             text: '1、垃圾回收相关',
-                        link: "/javascript/performance.md",
+                            link: "/javascript/performance.md",
                         },
                         {
                             text: '2、常见代码优化实例',
@@ -108,7 +108,7 @@ export default {
                             text: "3、Vue VirtualDOM",
                             link: "/vueframe/basicVirtualDOM.md",
                         }
-                    ],
+                        ],
                     },
                     {
                         text: "二、Vue源码浅析",
@@ -133,7 +133,7 @@ export default {
                             {
                                 text: "5、Diff 算法",
                                 // link: "/vueframe/vueSourceCode.md",
-                                children:[
+                                children: [
                                     {
                                         text: "简单 Diff 算法",
                                         // link: "/vueframe/vueSourceCode.md",
@@ -198,6 +198,60 @@ export default {
                         text: "四、React服务端渲染",
                         link: "/reactframe/reactServiceSideRender.md",
                         children: [],
+                    },
+                ],
+            },
+            {
+                text: "Angular 框架学习",
+                // 可折叠的侧边栏
+                collapsible: true,
+                children: [
+                    {
+                        text: "一、Angular 框架基础",
+                        children: [
+                            {
+                                text: "1、Angular 简介及基础",
+                                link: "/angular/basicAngular.one.md",
+                            },
+                            {
+                                text: "2、深入了解 Angular ",
+                                link: "/angular/basicAngular.two.md",
+                            },
+                        ],
+                    },
+                    {
+                        text: "二、Angular 框架进阶",
+                        children: [{
+                            text: "1、Angular 表单",
+                            link: "/angular/basicAngular.form.md",
+                        },
+
+                        {
+                            text: "2、Angular 路由",
+                            link: "/angular/basicAngular.router.md",
+                        },
+                        ]
+                    },
+                    {
+                        text: "三、Angular 框架高级",
+                        children: [
+                            {
+                                text: "1、Angular HttpClient",
+                                link: "/angular/basicAngular.http.md",
+                            },
+                            {
+                                text: "2、Angular RXJS",
+                                link: "/angular/angular.rxjs.md",
+                            },
+                            {
+                                text: "3、Angular NGRX",
+                                link: "/angular/angular.ngrx.md",
+                            },
+                            {
+                                text: "4、Angular 动画",
+                                link: "/angular/angular.animate.md",
+                            },
+                        ]
                     },
                 ],
             },
