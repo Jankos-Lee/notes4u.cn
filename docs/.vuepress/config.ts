@@ -271,15 +271,20 @@ export default {
             {
                 text: "前端面试题汇总",
                 // 可折叠的侧边栏
-                // collapsible: true,
+                collapsible: true,
                 link: "/interview/feInterview.md",
-                // children: [
-                //     {
-                //         text: "1.Vue.js基础",
-                //         link: "/interview/feInterview.md",
-                //         children: [],
-                //     },
-                // ],
+                children: [
+                    {
+                        text: "面试题汇总-2022",
+                        link: "/interview/feInterview.md",
+                        children: [],
+                    },
+                    {
+                        text: "面试题汇总-2024",
+                        link: "/interview/feInterviewV2.md",
+                        children: [],
+                    },
+                ],
             },
         ],
     }),
