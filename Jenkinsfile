@@ -73,7 +73,7 @@ stages {
             sh 'node --version'
             // 安装依赖
             echo '-------------------------------- install node module packages -------------------------------- '
-            sh 'npm install --registry=https://registry.npm.taobao.org'
+            sh 'npm install --registry=https://registry.npmjs.org'
             // 打包构建
             echo '-------------------------------- start build --------------------------------'
             sh 'npm run build'
