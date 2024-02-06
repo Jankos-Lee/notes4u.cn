@@ -22,4 +22,10 @@
   * Tips: getDerivedStateFromError 能够更新 state，发生错误时使下一次渲染能够显示降级后的 UI 
 
 * 类组件与函数组件有什么区别
- * 共同点：
+ * 共同点：作为基础组件展示 UI
+ * 不同点：
+  * OOP 和 FP
+  * 类独有生命周期
+  * 类用 shouldComponentUpdate 阻断渲染提示性能，而函数组件用 React.memo 来缓存渲染结果 
+
+* 如何设计 React 组件
