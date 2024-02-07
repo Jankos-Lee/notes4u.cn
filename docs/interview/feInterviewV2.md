@@ -29,3 +29,4 @@
   * 类用 shouldComponentUpdate 阻断渲染提示性能，而函数组件用 React.memo 来缓存渲染结果 
 
 * 如何设计 React 组件
+test
