@@ -7,14 +7,17 @@
     * 组件化的优势在于试图的拆分与模块的复用，可以更容易做到高内聚低耦合
     * 通用型在于一次学习，随处编写。比如 React Native， React 360 等，这里主要靠虚拟 DOM 来实现。这使得 React 的适用范围也变得足够广，无论是Web、Native、VR、甚至 Shell 应用都可以进行开发。但作为一个视图层的框架，React 的劣势也变得十分明显。它没有提供完整的一揽子解决方案，在开发大型前端应用时，需要向社区寻找并整合解决方案。虽然一定程度上促进了社区的繁荣。但也为开发者在技术选型和学习适用上造成了一定的成本。
   * 可以再谈一下自己对 React 优化的看法、对虚拟 DOM 的看法
+----
 
 * 为什么 React 要用 JSX?
   * 什么是 JSX：JavaScript 的语法拓展，结构类似 XML，主要用于声明 React 元素，但 React 中并不强制使用 JSX，即便使用了也会在构建的过程中通过 bebel 插件编译为 React.CreateElement， JSX 更像是构建 React.CreateElement 的语法糖。
   * 模板【弱关注度分离 + 引入概念多】
   * 模板字符串【结构描述复杂 + 语法提示差】
   * JXON 【语法提示差】
+----
 
 * Babel 插件如何实现 JSX 到 JS 的编译？
+----
 
 * React 生命周期相关
   * 函数组件：任何情况下都会重新渲染，没有生命周期，官方提供React.memo优化手段
@@ -27,6 +30,7 @@
   * OOP 和 FP
   * 类独有生命周期
   * 类用 shouldComponentUpdate 阻断渲染提示性能，而函数组件用 React.memo 来缓存渲染结果 
+----
 
 * 如何设计 React 组件？
  * 设计分类
@@ -40,11 +44,12 @@
  * 工程实践
   * 目录结构划分
   * 引入工程管理
+----
 
 * setState 是同步更新还是异步更新？
 > setState 用于变更状态，触发组件重新渲染，更新视图 UI
  ![setState](../../images/setState.dio)
-``
+````
 class Test extends React.Component {
  state  = {
      count: 0
@@ -54,16 +59,19 @@ class Test extends React.Component {
    console.log(this.state.count);
    this.setState({count: this.state.count + 1});
    console.log(this.state.count);
-   setTimeout(() => {
-     this.setState({count: this.state.count + 1});
-     console.log(this.state.count);
-     this.setState({count: this.state.count + 1});
-     console.log(this.state.count);
-   }, 0);
+    setTimeout(() => {
+        this.setState({count: this.state.count + 1});
+        console.log(this.state.count);
+        this.setState({count: this.state.count + 1});
+        console.log(this.state.count);
+    }, 0);
  }
  render() {
    return null;
  }
 };
 输出结果： 0 0 2 3
-``
+````
+** setState 是同步还是异步的的核心关键是： 更新队列 **
+
+----
