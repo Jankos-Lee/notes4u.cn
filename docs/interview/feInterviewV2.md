@@ -105,3 +105,7 @@ React.createElement 执行后会返回一个 Plain Object，它会描述自己�
 高性能应用场景存在难以优化的情况，类似像 Google Earth 一类的高性能前端应用在技术选型上往往不会选择 React。
 ````
 ![虚拟 DOM 工作原理](../../images/virtual-dom.drawio.png)
+
+----
+
+* 与其他框架相比， React Diff 算法有何不同？
