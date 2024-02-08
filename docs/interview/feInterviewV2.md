@@ -28,7 +28,7 @@
   * 类独有生命周期
   * 类用 shouldComponentUpdate 阻断渲染提示性能，而函数组件用 React.memo 来缓存渲染结果 
 
-* 如何设计 React 组件
+* 如何设计 React 组件？
  * 设计分类
   * 展示组件
    * 代理组件
@@ -40,3 +40,30 @@
  * 工程实践
   * 目录结构划分
   * 引入工程管理
+
+* setState 是同步更新还是异步更新？
+> setState 用于变更状态，触发组件重新渲染，更新视图 UI
+ ![setState](../../images/setState.dio)
+``
+class Test extends React.Component {
+ state  = {
+     count: 0
+ };
+   componentDidMount() {
+   this.setState({count: this.state.count + 1});
+   console.log(this.state.count);
+   this.setState({count: this.state.count + 1});
+   console.log(this.state.count);
+   setTimeout(() => {
+     this.setState({count: this.state.count + 1});
+     console.log(this.state.count);
+     this.setState({count: this.state.count + 1});
+     console.log(this.state.count);
+   }, 0);
+ }
+ render() {
+   return null;
+ }
+};
+输出结果： 0 0 2 3
+``
