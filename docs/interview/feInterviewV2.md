@@ -78,3 +78,9 @@ class Test extends React.Component {
 ----
 
 * 如何面向组件跨层级通信
+
+![跨层级通信](../../images/component-communicate.drawio.png)
+
+----
+
+* 列举一种你了解的 React 状态管理框架
