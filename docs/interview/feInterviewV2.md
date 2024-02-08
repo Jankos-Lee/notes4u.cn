@@ -48,7 +48,7 @@
 
 * setState 是同步更新还是异步更新？
 > setState 用于变更状态，触发组件重新渲染，更新视图 UI
- ![setState](../../images/setState.dio)
+ ![setState](../../images/setState.drawio.png)
 ````
 class Test extends React.Component {
  state  = {
@@ -75,3 +75,5 @@ class Test extends React.Component {
 ** setState 是同步还是异步的的核心关键是： 更新队列 **
 
 ----
+
+* 如何面向组件跨层级通信
