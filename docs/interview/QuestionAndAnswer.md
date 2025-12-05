@@ -1,10 +1,10 @@
 * [CSS的重绘与回流](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/ReflowAndRepaint.md)
 * [原型和原型链](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/Prototype.md)
-* [列举三种强制类型转换和两种隐式类型转换]()
+* [列举三种强制类型转换和两种隐式类型转换](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/JsTypeTransfer.md)
 * [this指向问题](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/this.md)
-* [http和https的区别]()
-* [nextTick的实现]()
-* [JS 的栈和堆]()
+* [http和https的区别](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/HttpAndHttps.md)
+* [nextTick的实现](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/VueNextTick.md)
+* [JS 的栈和堆](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/StachHeapInJs.md)
 * [JWT]
 * [ES5继承和ES6继承区别]()
 * [promise和async/await区别]
