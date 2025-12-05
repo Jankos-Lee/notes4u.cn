@@ -6,7 +6,7 @@
 * [nextTick的实现](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/VueNextTick.md)
 * [JS 的栈和堆](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/StachHeapInJs.md)
 * [JWT]
-* [ES5继承和ES6继承区别]()
+* [ES5继承和ES6继承区别](https://github.com/Jankos-Lee/notes4u.cn/blob/main/docs/interview/ES5ES6.md)
 * [promise和async/await区别]
 * [for循环里面加定时器]
 * [箭头函数可以做构造函数吗？可以通过call修改this吗？为什么？]
